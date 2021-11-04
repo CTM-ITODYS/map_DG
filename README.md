@@ -15,6 +15,9 @@ The software will produced three files:
 
 'map.dat' contains all the data whereas 'map.gnu' is a script used by gnuplot for generating the landscape image such as 'map.png'.
 
-Enjoy, Florent Barbault.
+Beware: computation time varies with the square of the number of chosen bins... so it can take a while.
+
 If this software is useful for you, please cite:
 "Molecular Dynamics Simulation of a RNA Aptasensor" M. Ruan, M. Seydou, V. Noël, B. Piro, F. Maurel and F. Barbault*, Journal of Physical Chemistry B, 2017 (16) 4071-80 
+
+Enjoy, Florent Barbault.
