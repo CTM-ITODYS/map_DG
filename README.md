@@ -3,6 +3,8 @@ calculate free energy landscape from 2 metrics
 
 This soft compute a rough estimate of a free energy landscape using two arbitrary structural coordinates. Both of them can came, for example, from a molecular dynamics trajectory. This computation is made through Boltzmann dependance between population and Gibbs free energy. We aware the reader that, without reaching the system ergodicity, this computation is only an estimate and should be seen more qualitatively than quantitatively.
 
+$\Delta{G}=-{k_B}{T}{log\frac{P(\rho_{\phi_1}\rho_{\phi_2})}{P_{max}(\rho_{\phi_1}\rho_{\phi_2})} }$$
+
 Usage:
 % map_DG.pl file
 
