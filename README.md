@@ -1,12 +1,13 @@
 # map_DG
 calculate free energy landscape from 2 metrics
 
-This soft compute a rough estimate of a free energy landscape using two arbitrary structural coordinates. Both of them can came, for example, from a molecular dynamics trajectory. This computation is made through Boltzmann dependance between population and Gibbs free energy. We aware the reader that, without reaching the system ergodicity, this computation is only an estimate and should be seen more qualitatively than quantitatively.
+This soft compute a rough estimate of a free energy landscape using two arbitrary structural coordinates. Both of them can came, for example, from a molecular dynamics trajectory. This computation is made through Boltzmann dependance between population and Gibbs free energy according to this equation:
 
 $\Delta{G_{i,j}}=-k_B\cdot T\cdot log {\left(\frac{P_{i,j}\left(\rho_{\phi_i,\phi_j}\right)}{P_{max}\left(\rho_{\phi_i,\phi_j}\right)} \right)}$
 
-Usage:
-% map_DG.pl file
+We aware the reader that, without reaching the system ergodicity, this computation is only an estimate and should be seen more qualitatively than quantitatively.
+
+Usage: ```% map_DG.pl file```
 
 Where file is a text file which contains 3 columns. These are, respectively, an index number, the X and Y values. To get this file, it might be useful for the use the 'extract_column.pl' software which selects the desired columns from a more extended file and create a new one. The software will first identified the minimum and maximum values on each dimensions. The user will then have to choose between using these values or defining new ones.The user will be prompted to give the number of wanted bins. This value is identical for both dimension but may be adapted if someone ask. For the image generation, made with gnuplot, the user will have to provide labels for the reaction coordinates.
 
